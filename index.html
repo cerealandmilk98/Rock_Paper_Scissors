@@ -19,7 +19,19 @@
         }
       };
 
+      let getHumanChoice = (choice) => {
+        if (choice === "rock" || choice === "paper" || choice === "scissors") {
+          return choice;
+        } else {
+          return "Please enter a valid choice";
+        }
+      };
+
+      let humanScore = 0;
+      let computerScore = 0;
+
       console.log(getComputerChoice());
+      console.log(getHumanChoice("scissors"));
     </script>
   </body>
 </html>
